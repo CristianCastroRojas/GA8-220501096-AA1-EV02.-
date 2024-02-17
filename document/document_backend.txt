@@ -1,0 +1,48 @@
+# Documentación del Proyecto Web
+
+## Aplicación Flask "RegistroClientes" (Backend)
+
+### 1. Introducción
+
+La aplicación Flask "RegistroClientes" permite a los usuarios registrar información de clientes a través de un formulario web.
+
+### 2. Configuración y Requisitos
+
+- Asegúrese de tener Python instalado.
+- Instale las dependencias usando `pip install -r requirements.txt`.
+
+### 3. Estructura del Proyecto
+
+La aplicación sigue la estructura típica de Flask con carpetas como templates y static.
+
+### 4. Uso de la Aplicación
+
+#### 4.1 Página Principal (`/`)
+
+- Bienvenida y enlaces a otras secciones.
+
+#### 4.2 Registro de Clientes (`/registrar_cliente`)
+
+- Formulario para ingresar detalles del cliente.
+- Campos: Nombre, Apellido, etc.
+- Validación de datos antes de enviar al servidor.
+
+#### 4.3 Página de Agradecimiento (`/thanks`)
+
+- Mensaje de confirmación y enlace de regreso a la página principal.
+
+### 5. Código Python
+
+#### 5.1 `app.py`
+
+- `index()`: Maneja la página principal.
+- `registrar_cliente()`: Procesa el formulario y guarda los datos en un archivo JSON.
+
+### 6. Persistencia de Datos
+
+- Los datos del cliente se almacenan en el archivo `clientes.json`.
+
+### 7. Ejecución de la Aplicación
+
+- Ejecute la aplicación con `python app.py`.
+- Acceda a través de un navegador en [http://localhost:5000](http://localhost:5000).

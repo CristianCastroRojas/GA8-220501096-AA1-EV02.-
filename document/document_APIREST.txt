@@ -1,0 +1,51 @@
+# Documentación del Backend
+
+## 1. Introducción
+
+La aplicación de backend utiliza Flask y MongoDB para gestionar el registro de clientes.
+
+## 2. Configuración y Requisitos
+
+Asegúrese de tener Python instalado. Instale las dependencias usando `pip install Flask Flask-PyMongo`.
+
+## 3. Estructura del Proyecto
+
+La aplicación sigue la estructura simple de un único archivo `app.py`.
+
+## 4. Uso de la Aplicación
+
+### 4.1 Página Principal (/)
+
+- **Método:** GET
+- **Descripción:** Muestra información opcional.
+
+### 4.2 Registro de Clientes (/registrar_cliente)
+
+- **Método:** POST
+- **Descripción:** Procesa el formulario de registro y almacena los datos en la base de datos MongoDB.
+
+### 4.3 Obtener Lista de Clientes (/api/clientes)
+
+- **Método:** GET
+- **Descripción:** Devuelve la lista de clientes almacenados en formato JSON.
+
+### 4.4 Página de Agradecimiento (/thanks)
+
+- **Método:** GET
+- **Descripción:** Muestra una página de agradecimiento después de que se registra un cliente.
+
+## 5. Base de Datos MongoDB
+
+- **Nombre de la Base de Datos:** `autovenz`
+- **Colección:** `clientes`
+
+## 6. Ejecución de la Aplicación
+
+Ejecute la aplicación con `python app.py`. Acceda a través de un navegador en http://localhost:5000.
+
+## 7. Dependencias
+
+- Flask
+- Flask-PyMongo
+
+---

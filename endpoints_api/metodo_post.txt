@@ -1,0 +1,24 @@
+# Documentación de la API
+
+## 1. Registrar Cliente
+
+### Descripción
+
+Este endpoint permite registrar un nuevo cliente en la base de datos.
+
+### Detalles
+
+- **Endpoint:** `/registrar_cliente`
+- **Método:** POST
+- **Parámetros (form data):**
+  - `nombre`
+  - `apellido`
+  - `nombreComercial`
+  - `correoElectronico`
+  - `telefono`
+  - `ciudad`
+  - `comentarios`
+
+- **Ejemplo de Solicitud:**
+  ```bash
+  curl -X POST http://localhost:5000/registrar_cliente -d "nombre=Cristian&apellido=Castro&nombreComercial=CACR S.A.S&correoElectronico=cristiancastro2406@gmail.com&telefono=3232927924&ciudad=Bogota&comentarios=Prueba de testing con postman"

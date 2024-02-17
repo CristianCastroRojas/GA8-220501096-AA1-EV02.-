@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Bienvenido a Autovenz, tu fuente confiable de autopartes para todas las marcas de vehículos. Ofrecemos una amplia gama de piezas de alta calidad para mantener tu vehículo en excelente estado.">
+    <meta name="keywords" content="autopartes, piezas de automóvil, repuestos, todas las marcas, vehículos">
+    <meta name="author" content="Cristian Andrés Castro Rojas">
+    <meta name="robots" content="index, follow">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="generator" content="HTML5">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous">
+    <link rel="shortcut icon" href="{{ url_for('static', filename='images/Logos/favicon-32x32.png') }}" type="image/x-icon">
+    <title>AutoVenz S.A.S. | Autopartes Genuinas</title>
+</head>
+
+<body>
+    <!---Barra de Navegación-->
+    <nav class="navbar navbar-expand-lg">
+        <a class="navbar-brand" href="#">
+            <img src="{{ url_for('static', filename='images/Logos/autovenz.png') }}" alt="Logo" height="50">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#inicio">Inicio <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#quienes_somos">Quiénes Somos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#nuestro_equipo">Nuestro Equipo</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#catalogo">Catálogo</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contactos">Contactos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#ser_cliente">Ser Cliente</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://www.zonapagos.com/t_autovenzsas/pagos.asp"
+                        target="_blank">Pagos</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!--fin barra de navegación-->
+
+    <!-- Carrusel de Productos -->
+    <div id="carouselProductos" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="{{ url_for('static', filename='images/Engine/Engine_1.jpg') }}" class="d-block w-100" alt="Producto 1">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Ref. OEM: 213022-190</h5>
+                    <p>Marca: APR Engine Parts</p>
+                    <p>Linea: Ford </p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="{{ url_for('static', filename='images/Engine/Engine_2.jpg') }}" class="d-block w-100" alt="Producto 2">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Ref. OEM: 2180150-34230</h5>
+                    <p>Marca: APR Engine Parts</p>
+                    <p>Linea: Mazda</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="{{ url_for('static', filename='images/Engine/Engine_3.jpg') }}" class="d-block w-100" alt="Producto 3">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Ref. OEM: MB153412</h5>
+                    <p>Marca: Diamond Power</p>
+                    <p>Linea: Mitsubishi</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="{{ url_for('static', filename='images/Engine/Engine_4.jpg') }}" class="d-block w-100" alt="Producto 4">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Ref. OEM: 155670A</h5>
+                    <p>Marca: APR AUTO PARTS</p>
+                    <p>Linea: RENUALT</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="{{ url_for('static', filename='images/Engine/Engine_5.jpg') }}" class="d-block w-100" alt="Producto 5">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Ref. OEM: AZ345672</h5>
+                    <p>Marca: RUBBER STEEL PARTS</p>
+                    <p>Linea: HYUNDAI</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="{{ url_for('static', filename='images/Engine/Engine_6.jpg') }}" class="d-block w-100" alt="Producto 6">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Ref. OEM: 211522-150</h5>
+                    <p>Marca: RUBBER STEEL PARTS</p>
+                    <p>Linea: NISSAN</p>
+                </div>
+            </div>
+            <!-- Agrega más elementos según sea necesario -->
+        </div>
+        <a class="carousel-control-prev" href="#carouselProductos" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Anterior</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselProductos" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Siguiente</span>
+        </a>
+    </div>
+
+    <!-- Sección de Inicio -->
+    <div id="inicio" class="container mt-5">
+        <div class="row">
+            <!-- Columna de Texto -->
+            <div class="col-md-6">
+                <h2>los expertos en autopartes Genuinas para tu vehiculo</h2>
+            </div>
+            <!-- Columna de Imagen -->
+            <div class="col-md-6">
+                <img src="{{ url_for('static', filename='images/Logos/collage1.png') }}" class="img-fluid" alt="Imagen de Inicio">
+            </div>
+        </div>
+    </div>
+
+    <!-- Sección de Quiénes Somos -->
+    <div id="quienes_somos" class="container mt-5">
+        <div class="row">
+            <!-- Columna de Visión (Lado Izquierdo) -->
+            <div class="col-md-4">
+                <h2>Visión</h2>
+                <p>Como punto principal tenemos la capatacion de nuestro clientes con la excelencia de nuestra  calidad y servicio.</p>
+            </div>
+            <!-- Columna de Misión (Centro) -->
+            <div class="col-md-4">
+                <h2>Misión</h2>
+                <p>Hacer que nuestro clientes se sientan indentificados con nuestras marca ya que de ellos esta nuestro
+                    posicionamiento en el parque automotriz</p>
+            </div>
+            <!-- Columna de Reseña Histórica (Lado Derecho) -->
+            <div class="col-md-4">
+                <h2>Reseña Histórica</h2>
+                <p>Es una organización constituida a inicio del año 2018 dedicada a la comercialización y distribución
+                    de auto partes nuevas en la ciudad de cucuta, durante su operatividad logro expandirse en el
+                    territorio Nacional, Logrando posicionarse en el mercado ofreciendo calidad en servicios y productos
+                    a su amplia cartera de clientes.Ademas de tener una extensa gama de productos con la calidad y
+                    certificación de todas las marcas originales del parque automotriz.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sección de Catálogo -->
+    <div id="catalogo" class="container mt-5">
+        <h2>Catálogo</h2>
+        <p>Conoce nuestro portafolio de servicios para tu vehiculo</p>
+        <div class="row">
+            <!-- Botón para PDF de Rubber Steel -->
+            <div class="col-md-2">
+                <a href="{{ url_for('static', filename='catalogo/LP_RBS_.pdf') }}" download class="btn btn-primary">catalogo RBS parts</a>
+            </div>
+            <!-- Botón para PDF de APR Engine Parts -->
+            <div class="col-md-2">
+                <a href="{{ url_for('static', filename='catalogo/LP_APR_.pdf') }}" download class="btn btn-primary">catalogo APR Engine Parts</a>
+            </div>
+            <!-- Botón para PDF de APR Auto Parts -->
+            <div class="col-md-2">
+                <a href="{{ url_for('static', filename='catalogo/LP_APR_.pdf') }}" download class="btn btn-primary">Catalogo APR Auto Parts</a>
+            </div>
+            <!-- Botón para PDF de Diamond Power -->
+            <div class="col-md-2">
+                <a href="{{ url_for('static', filename='catalogo/LP_DP_.pdf') }}" download class="btn btn-primary">Catalogo Diamond</a>
+            </div>
+            <!-- Botón para Catálogo Completo -->
+            <div class="col-md-2">
+                <a href="ruta_pdf_catalogo_completo.pdf" download class="btn btn-primary">Catálogo
+                    Completo</a>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Sección de Nuestro Equipo -->
+    <div id="nuestro_equipo" class="container mt-5">
+        <h2 id="team">Nuestro Equipo</h2>
+        <div class="row">
+            <!-- Espacios para Miembros del Equipo -->
+            <div class="col-md-2">
+                <img src="{{ url_for('static', filename='images/Salesman/Salesman_1.jpg') }}" class="img-fluid" alt="Miembro 1">
+                <h5>Hector Velasco</h5>
+                <p>Bogota</p>
+                <a href="https://wa.me/123456789" target="_blank">
+                    <img class="btn-whatsapp" src="{{ url_for('static', filename='images/Logos/whatsapp-logo.svg') }}" alt="WhatsApp">
+                </a>
+                <p>123-456-789</p>
+            </div>
+            <div class="col-md-2">
+                <img src="{{ url_for('static', filename='images/Salesman/Salesman_2.jpg') }}" class="img-fluid" alt="Miembro 2">
+                <h5>Steven Velasco</h5>
+                <p>Bogota</p>
+                <a href="https://wa.me/123456789" target="_blank">
+                    <img class="btn-whatsapp" src="{{ url_for('static', filename='images/Logos/whatsapp-logo.svg') }}" alt="WhatsApp">
+                </a>
+                <p>123-456-789</p>
+            </div>
+            <div class="col-md-2">
+                <img src="{{ url_for('static', filename='images/Salesman/Salesman_3.jpg') }}" class="img-fluid" alt="Miembro 3">
+                <h5>Wilson Cifuentes</h5>
+                <p>Costa-Oriente</p>
+                <a href="https://wa.me/123456789" target="_blank">
+                    <img class="btn-whatsapp" src="{{ url_for('static', filename='images/Logos/whatsapp-logo.svg') }}" alt="WhatsApp">
+                </a>
+                <p>123-456-789</p>
+            </div>
+            <div class="col-md-2">
+                <img src="{{ url_for('static', filename='images/Salesman/Salesman_4.jpg') }}" class="img-fluid" alt="Miembro 4">
+                <h5>Rene Maldonado</h5>
+                <p>Cúcuta</p>
+                <a href="https://wa.me/123456789" target="_blank">
+                    <img class="btn-whatsapp" src="{{ url_for('static', filename='images/Logos/whatsapp-logo.svg') }}" alt="WhatsApp">
+                </a>
+                <p>123-456-789</p>
+            </div>
+            <div class="col-md-2">
+                <img src="{{ url_for('static', filename='images/Salesman/Salesman_5.jpg') }}" class="img-fluid" alt="Miembro 5">
+                <h5>Robinson Medina</h5>
+                <p>Medellin</p>
+                <a href="https://wa.me/123456789" target="_blank">
+                    <img class="btn-whatsapp" src="{{ url_for('static', filename='images/Logos/whatsapp-logo.svg') }}" alt="WhatsApp">
+                </a>
+                <p>123-456-789</p>
+            </div>
+            <div class="col-md-2">
+                <img src="{{ url_for('static', filename='images/Salesman/Salesman_6.jpg') }}" class="img-fluid" alt="Miembro 6">
+                <h5>Anderson Moura</h5>
+                <p>Cali</p>
+                <a href="https://wa.me/123456789" target="_blank">
+                    <img class="btn-whatsapp" src="{{ url_for('static', filename='images/Logos/whatsapp-logo.svg') }}" alt="WhatsApp">
+                </a>
+                <p>123-456-789</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sección de Contacto -->
+    <div id="contactos" class="container mt-6">
+        <h2>Nuestras Sedes</h2>
+        <div class="row">
+            <!-- Información de la Sucursal 1 -->
+            <div class="col-md-6">
+                <h3>CUCUTA</h3>
+                <p>Anillo Vial Oriental</p>
+                <p>Parque Empresarial Bocono Bodega 3</p>
+                <p>ventas@autovenz.com</p>
+                <p>3028382950</p>
+            </div>
+        </div>
+        <div class="row">
+            <!-- Información de la Sucursal 2 -->
+            <div class="col-md-6">
+                <h3>MEDELLIN</h3>
+                <p>Carrera 80 N 45GG-66</p>
+                <p>Local 101 Edif. Torre 80</p>
+                <p>ventas@autovenz.com</p>
+                <p>3165226695</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sección de Registro de Clientes -->
+    <div id="ser_cliente" class="container mt-5">
+        <h2>¡Se nuestro cliente!</h2>
+        <form id="registroForm" action="/registrar_cliente" method="post">
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Nombre">
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="apellido">Apellido</label>
+                    <input type="text" class="form-control" id="apellido" name="apellido" placeholder="Apellido">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="nombreComercial">NOMBRE COMERCIAL (OPCIONAL)</label>
+                <input type="text" class="form-control" id="nombreComercial" name="nombreComercial" placeholder="Nombre Comercial">
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="correoElectronico">Correo Electrónico</label>
+                    <input type="email" class="form-control" id="correoElectronico" name="correoElectronico" placeholder="Correo Electrónico">
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="telefono">Número de Teléfono</label>
+                    <input type="tel" class="form-control" id="telefono" name="telefono" placeholder="Número de Teléfono">
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="ciudad">Ciudad</label>
+                    <select id="ciudad" name="ciudad" class="form-control">
+                        <option selected>Selecciona...</option>
+                        <!-- Puedes agregar todas las ciudades de Colombia aquí -->
+                        <option>Bogotá</option>
+                        <option>Medellín</option>
+                        <!-- Agregar más ciudades según sea necesario -->
+                    </select>
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="comentarios">Comentarios</label>
+                    <textarea class="form-control" id="comentarios" rows="3" name="comentarios"
+                        placeholder="Escribe tus comentarios aquí"></textarea>
+                </div>
+            </div>
+            <button type="submit" class="btn btn-primary">Registrar</button>
+        </form>
+    </div>
+
+    <footer>
+            <!-- Quién Creó la Web -->
+            <div class="row mt-6">
+                <div class="col-md-12">
+                    <p>Desarrollado por: Cristian Andres Castro Rojas &copy; 2023</p>
+                    <p>Estudiante de Tecnologia en Analisis y Desarollo de Software</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

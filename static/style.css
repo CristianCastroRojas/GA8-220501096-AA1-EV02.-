@@ -1,0 +1,318 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;1,400&display=swap");
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* Estilos para la Barra de Navegación */
+.navbar {
+  background-color: #8E44AD; /* Color de fondo morado */
+}
+
+.navbar-brand img {
+  margin-right: 10px; /* Margen derecho para separar el logo de los enlaces */
+}
+
+.navbar-toggler-icon{ 
+ color: #ffffff;/* Color del icono del botón para pantallas pequeñas */
+}
+
+.navbar-nav {
+  margin: auto; /* Centra los elementos horizontalmente */
+  display: flex; /* Utiliza flexbox para centrar los elementos */
+  align-items: center; /* Alinea los elementos verticalmente en el centro */
+}
+
+.navbar-nav .nav-item {
+  margin-right: 20px; /* Separación entre elementos de la barra de navegación */
+}
+
+.navbar-nav .nav-link {
+  font-style: normal;
+  font-weight: bold;
+  color: #ffffff; /* Color del texto de los enlaces */
+  text-decoration: none; /* Quita el subrayado predeterminado */
+  transition: color 0.3s; /* Efecto de transición para el color del texto */
+}
+
+.navbar-nav .nav-link:hover {
+  color: #ffffff; /* Color del texto al pasar el mouse */
+  border-bottom: 2px solid #ffffff; /* Línea por debajo al pasar el mouse */
+}
+
+/* Estilos para el Carrusel */
+#carouselProductos {
+    max-height: 400px; /* Altura máxima del carrusel */
+    overflow: hidden; /* Oculta el exceso de altura de las imágenes */
+}
+
+.carousel-inner {
+    transition: transform 0.5s ease-in-out; /* Efecto de transición al cambiar las imágenes */
+}
+
+.carousel-item {
+    text-align: center; /* Centra el texto dentro del carrusel */
+}
+
+.carousel-item img {
+    max-height: 400px; /* Altura máxima de las imágenes */
+    margin: auto; /* Centra la imagen horizontalmente */
+}
+
+.carousel-caption {
+    background-color: rgba(0, 0, 0, 0.7); /* Fondo semi-transparente para el texto */
+    padding: 20px;
+    border-radius: 10px; /* Bordes redondeados */
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    color: #ffffff; /* Color del texto */
+}
+
+.carousel-caption h5 {
+    font-size: 1.5em; /* Tamaño del título */
+    margin-bottom: 10px;
+}
+
+.carousel-caption p {
+    font-size: 1em; /* Tamaño del texto */
+}
+
+/* Estilo para las flechas de control del carrusel */
+.carousel-control-prev, .carousel-control-next {
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente para las flechas */
+    border-radius: 50%; /* Bordes redondeados */
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 1.5em;
+    color: #ffffff; /* Color de las flechas */
+    top: 50%; /* Posición en la mitad vertical */
+    transform: translateY(-50%); /* Ajusta la posición vertical */
+}
+
+/* Ajusta los colores al pasar el mouse sobre las flechas */
+.carousel-control-prev:hover, .carousel-control-next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+/* Estilos para la Sección de Inicio */
+.container-mt-5 {
+    padding-top: 50px; /* Espacio superior en la sección de inicio */
+    background-color: #BDC3C7; /* Fondo gris para la sección */
+}
+
+.col-md-6 {
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.col-md-6 h2{
+    font-weight: 700;
+    font-size: 70px;
+}
+
+.col-md-6 p{
+    font-weight: 400;
+    font-size: 15px;
+}
+
+.col-md-6 img {
+    max-width: 100%; /* Ajusta el ancho máximo de la imagen al contenedor */
+}
+
+.btn-primary{
+    font-weight: 500;
+    text-transform: uppercase;
+    background-color: #8E44AD; /* Color de fondo morado para el botón */
+    color: #ffffff; /* Color del texto blanco para el botón */
+    border: 2px solid transparent; /* Borde transparente por defecto */
+    border-color: #421084;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra por defecto */
+}
+
+.btn-primary:hover {
+    background-color: #421084; /* Cambia el color al pasar el mouse */
+    border-color: #ffffff; /* Cambia el color del borde al pasar el mouse */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Añade sombra al pasar el mouse */
+}
+
+/* Estilos para la Sección de Quiénes Somos */
+.container-mt-5 {
+    padding-top: 50px; /* Espacio superior en la sección */
+    background-color: #ffffff; /* Fondo blanco para la sección */
+}
+
+.col-md-4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: justify;
+    text-transform: uppercase;
+    margin-bottom: 30px; /* Espacio inferior entre las columnas */
+}
+
+.col-md-4 h2 {
+    color: #6a1b9a; /* Color morado para los títulos */
+    font-weight: 700;
+}
+
+.col-md-4 p {
+    text-align: justify;
+    color: #333333; /* Color del texto gris oscuro */
+    font-weight: 500;
+}
+
+/* Estilos para la Sección de Catálogo */
+.container-mt-5 {
+    padding-top: 50px; /* Espacio superior en la sección */
+}
+
+h2 {
+    font-weight: 700;
+    text-align: center; /* Centra el título */
+    color: #6a1b9a; /* Color morado para el título */
+}
+
+p {
+    text-transform: uppercase;
+    font-weight: 500;
+    text-align: center; /* Centra el texto del párrafo */
+}
+
+.row {
+    margin-top: 20px; /* Espacio superior entre el texto y los botones */
+}
+
+.col-md-2 {
+    text-align: center; /* Centra el contenido dentro de cada columna */
+}
+
+.btn-primary {
+    background-color: #6a1b9a; /* Color morado para los botones de descarga */
+    color: #ffffff; /* Color del texto blanco para los botones de descarga */
+    margin-top: 15px; /* Espacio superior para los botones de descarga */
+}
+
+.btn-primary:hover {
+    background-color: #421084; /* Cambia el color al pasar el mouse sobre los botones de descarga */
+}
+
+/*Espacio para la seccion de contactos*/
+
+/* Estilos para la Sección de Nuestro Equipo */
+.container-mt-5 {
+    padding-top: 50px; /* Espacio superior en la sección */
+    background-color: #f2f2f2; /* Fondo gris claro para la sección */
+}
+
+#team {
+    text-align: center; /* Centra el título */
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #6a1b9a; /* Color morado para el título */
+}
+
+.row {
+    display: flex;
+    justify-content: space-around; /* Espaciado uniforme entre las columnas */
+    flex-wrap: wrap; /* Ajuste para que las columnas se ajusten en dispositivos pequeños */
+}
+
+.col-md-2 {
+    text-transform: uppercase;
+    font-weight: 500;
+    text-align: center; /* Centra el contenido dentro de cada columna */
+    margin-bottom: 20px; /* Espacio inferior entre las columnas */
+}
+
+.img-fluid {
+    max-width: 100%; /* Ajusta el ancho máximo de las imágenes */
+    height: auto; /* Mantiene la relación de aspecto original */
+    border-radius: 50%; /* Bordes redondeados para las imágenes */
+}
+
+h5 {
+    margin-top: 5px; /* Espacio superior para los nombres */
+    text-align: center;
+}
+
+.btn-whatsapp {
+    width: 30px;
+}
+
+/* Estilos para la Sección de Registro de Clientes */
+.container-mt-5 {
+    padding-top: 50px; /* Espacio superior en la sección */
+}
+
+h2 {
+    text-transform: uppercase;
+    font-weight: 700;
+    text-align: center; /* Centra el título */
+    color: #6a1b9a; /* Color morado para el título */
+}
+
+form {
+    max-width: 600px; /* Ancho máximo del formulario para mejor legibilidad */
+    margin: auto; /* Centra el formulario en el contenedor */
+}
+
+.form-group {
+    margin-bottom: 15px; /* Espacio inferior entre grupos de formulario */
+}
+
+label {
+    font-weight: bold;
+    color: #6a1b9a; /* Color morado para las etiquetas del formulario */
+}
+
+/* Ajustes específicos para los campos de entrada */
+.form-control {
+    border-radius: 0; /* Bordes rectos en los campos de entrada */
+}
+
+/* Estilos para el botón de enviar */
+.btn-primary {
+    background-color: #6a1b9a; /* Color morado para el botón de enviar */
+    color: #ffffff; /* Color del texto blanco para el botón de enviar */
+    margin-top: 15px; /* Espacio superior para el botón de enviar */
+}
+
+.btn-primary:hover {
+    background-color: #421084; /* Cambia el color al pasar el mouse sobre el botón */
+}
+
+/* Footer */
+footer {
+    background-color: #333; /* Negro */
+    color: #ffffff;
+    margin: 3px;
+}
+
+/* Quién Creó la Web */
+footer h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+/* Mapa de Navegación */
+footer .col-md-6 ul {
+    text-align: left;
+}
+
+footer .col-md-6 ul li {
+    margin-bottom: 5px;
+}
+
+/* Contenido Adicional */
+footer .col-md-6 p {
+    margin-bottom: 10px;
+}
+

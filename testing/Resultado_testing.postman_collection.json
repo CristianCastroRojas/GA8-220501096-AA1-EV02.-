@@ -1,0 +1,97 @@
+{
+	"info": {
+		"_postman_id": "524b551d-b8bd-4632-8987-9d95eeee5767",
+		"name": "GA7-220501096-AA5-EV04: API del proyecto",
+		"description": "API realizado como evidencia a presentar de mi proyecto version 2 usando HTML, CSS , PYTHON Y MONGODB\n\nAutoria propia: Cristian Andres Castro Rojas",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "31740869"
+	},
+	"item": [
+		{
+			"name": "http://localhost:5000/api/clientes",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": []
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/clientes",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"clientes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5000/registrar_cliente",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "nombre",
+							"value": "Cristian",
+							"type": "text"
+						},
+						{
+							"key": "apellido",
+							"value": "Castro",
+							"type": "text"
+						},
+						{
+							"key": "nombreComercial",
+							"value": "CACR S.A.S",
+							"type": "text"
+						},
+						{
+							"key": "correoElectronico",
+							"value": "cristiancastro2406@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "telefono",
+							"value": "3232927924",
+							"type": "text"
+						},
+						{
+							"key": "ciudad",
+							"value": "Bogota",
+							"type": "text"
+						},
+						{
+							"key": "comentarios",
+							"value": "Prueba de testing",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:5000/registrar_cliente",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"registrar_cliente"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

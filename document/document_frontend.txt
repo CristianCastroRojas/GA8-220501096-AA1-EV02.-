@@ -1,0 +1,47 @@
+## Diseño Web (Frontend)
+
+### 1. Estilos CSS
+
+- Utiliza la fuente "Plus Jakarta Sans" de Google Fonts.
+- Paleta de colores: Morado (#8E44AD), Blanco (#ffffff), Negro (#333).
+
+### 2. Barra de Navegación
+
+- Morado sólido, texto blanco.
+- Enlaces a las secciones principales.
+
+### 3. Carrusel de Productos
+
+- Imágenes y descripciones de productos.
+- Controles de navegación y transiciones suaves.
+
+### 4. Sección de Inicio
+
+- Texto de bienvenida y botón para explorar.
+
+### 5. Sección de Quiénes Somos
+
+- Títulos morados, texto justificado.
+
+### 6. Sección de Catálogo
+
+- Presentación de productos con botones de descarga.
+
+### 7. Sección de Nuestro Equipo
+
+- Imágenes circulares, nombres y enlaces a redes sociales.
+
+### 8. Sección de Registro de Clientes
+
+- Estilos y diseño del formulario con botón de envío.
+
+### 9. Footer
+
+- Información de contacto y mapa de navegación.
+
+### 10. Responsividad y Compatibilidad
+
+- Diseño adaptativo para dispositivos móviles.
+- Compatibilidad con los principales navegadores.
+
+---

@@ -1,0 +1,34 @@
+# Documentación de la API
+
+## Obtener Lista de Clientes
+
+### Descripción
+
+Este endpoint permite obtener la lista de clientes almacenados en la base de datos.
+
+### Detalles
+
+- **Endpoint:** `/api/clientes`
+- **Método:** GET
+- **Respuesta Exitosa:**
+  - **Código de Estado:** 200 OK
+  - **Tipo de Contenido:** `application/json`
+  - **Ejemplo de Contenido:**
+    ```json
+    [
+      {
+        "_id": " ",
+        "nombre": "Cristian",
+        "apellido": "Castro",
+        "nombre_comercial": "CACRS S.A.S",
+        "correo": "cristiancastro2406@gmail.com",
+        "telefono": "3232927924",
+        "ciudad": "Bogota",
+        "comentarios": "Prueba de testing con postman"
+      },
+    ]
+
+### Ejemplo de Uso
+
+```bash
+curl -X GET http://localhost:5000/api/clientes
